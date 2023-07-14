@@ -28,6 +28,7 @@ public class Driver6x extends BaseDriver {
         
        System.out.println("Creating a player list of 4 players");
        PlayerList list = new PlayerList(4);
+       
        compare.compare("Checking max count", 4, list.getMaxPlayerCount());
        compare.compare("Checking current player count", 0, list.getPlayerCount());
 

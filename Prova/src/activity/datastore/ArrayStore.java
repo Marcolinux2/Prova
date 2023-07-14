@@ -10,9 +10,9 @@ public class ArrayStore extends AbstractArrayStore {
         super();
     }
     
-    public boolean add(Object arg) {
+    public boolean add(Object arg)  { // throws IllegalArgumentException 
 
-        if (arg == null) {
+    	if (arg == null) {
             throw new IllegalArgumentException(
                     "arraystore.method.argument.invalid");
         }
@@ -26,7 +26,7 @@ public class ArrayStore extends AbstractArrayStore {
         return false;
     }
 
-    public boolean remove(Object arg) {
+    public boolean remove(Object arg) { // throws IllegalArgumentException 
         
         if(arg == null){
             throw new IllegalArgumentException("arraystore.method.argument.invalid");
@@ -59,7 +59,7 @@ public class ArrayStore extends AbstractArrayStore {
 
 
     
-    public boolean insert(Object arg, int index) {
+    public boolean insert(Object arg, int index) { // throws IllegalArgumentException 
         
         if(arg == null || index > currentCount || index < 0){
             throw new IllegalArgumentException("arraystore.method.argument.invalid");

@@ -7,7 +7,8 @@ import java.util.Calendar;
  * 
  */
 public class PlayerProfile {
-
+	// la vispa teresa
+	
     //Player's name
     private String name;
     //Player's birthdate
