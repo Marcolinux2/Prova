@@ -4,6 +4,8 @@ public abstract class AbstractArrayStore {
 
 	// HINT: The following are class constants.
 
+	
+	// 
 	// You are not allowed to declare any additional class members.
 
 	// This is a constant that represents the code value returned when an object
