@@ -4,8 +4,6 @@ public abstract class AbstractArrayStore {
 
 	// HINT: The following are class constants.
 
-	
-	// 
 	// You are not allowed to declare any additional class members.
 
 	// This is a constant that represents the code value returned when an object
@@ -85,21 +83,17 @@ public abstract class AbstractArrayStore {
 	}
 
 	public Object[] toArray() {
-
 		Object[] temp = new Object[currentCount];
 		System.arraycopy(store, 0, temp, 0, currentCount);
-
 		return temp;
 	}
 
 	public void clear() {
-
 		currentCount = 0;
 		store = new Object[store.length];
 	}
 
 	public boolean isFull() {
-
 		if (currentCount == store.length) {
 			return true;
 		} else {
@@ -108,7 +102,6 @@ public abstract class AbstractArrayStore {
 	}
 
 	public int find(Object arg) {
-
 		// TODO Activity 2.3
 		// Search through the current contents of the array 'store' and determine if
 		// there is any object
